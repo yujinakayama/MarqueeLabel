@@ -1235,7 +1235,7 @@ open class MarqueeLabel: UILabel, CAAnimationDelegate {
     */
     public func triggerScrollStart() {
         if labelShouldScroll() && !awayFromHome {
-            updateAndScroll()
+            updateAndScroll(overrideHold: true)
         }
     }
     
